@@ -1,0 +1,79 @@
+/**********************************************************/
+/**** TP 1 : Jeu de Tic-tac-toe en HTML/CSS/JavaScript ****/
+/**** Fait par :        		Fatima Boumhamdi       ****/
+/**** Date fin de remise : 	14 Mai 2023                ****/
+/**********************************************************/
+
+/* Classes */
+.conteneur { 
+	width: 700px; 
+	padding: 20px; 
+	margin: auto;
+}
+.corpsjeu{
+	display: flex;
+	justify-content: space-evenly;
+}
+.resultat{
+	padding: 25px 10px;
+}
+.btns{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.btns button{
+	color: rgb(99, 16, 83);
+	background-color: rgb(252, 215, 244);
+	border: 1px solid rgb(252, 215, 244);
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-shadow: 8px 8px 8px 5px rgb(99, 16, 83);
+}
+.message{
+	display: flex;
+	justify-content: center;
+}
+.message p{
+	font-size: 24px;
+	font-weight: bolder;
+	color: white;
+	background-color: rgb(99, 16, 83);
+	border: 1px solid rgb(99, 16, 83);
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+.animegagnant {
+	position: relative;
+	animation-name: gagnant;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes gagnant {
+	0%   {background-color: rgb(99, 16, 83); left:-100px; top:0px;}
+	25%  {background-color: rgb(230, 169, 218); left:100px; top:0px;}
+	50%  {background-color: rgb(216, 107, 249); left:100px; top:20px;}
+	75%  {background-color: rgb(246, 88, 93); left:-100px; top:20px;}
+	100% {background-color: rgb(99, 16, 83); left:-100px; top:0px;}
+  }
+
+/* Surqualification de balises */
+tr, td{
+  border: 3px solid rgb(99, 16, 83);
+  border-radius: 10px;
+}
+h1{
+	text-align: center;
+	color: rgb(99, 16, 83);
+}
+td { 
+  width: 100px; height:100px; 
+  text-align: center; font-size: 300%; 
+  background-color: white;
+  color: rgb(99, 16, 83);
+}
+button{
+	width: fit-content;
+}

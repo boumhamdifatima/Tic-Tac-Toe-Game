@@ -1,0 +1,50 @@
+<!--**************************************************-->
+<!-- TP 1 : Jeu de Tic-tac-toe en HTML/CSS/JavaScript -->
+<!-- Fait par :        		Fatima Boumhamdi          -->
+<!-- Date fin de remise : 	14 Mai 2023               -->
+<!--**************************************************-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jeu de Tic-tac-toe</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/survole.js"></script>
+</head>
+<body>
+	<div class="conteneur">
+		<h1>Tic-Tac-Toe</h1><br/>
+		<div class="corpsjeu">
+			<div class="resultat">
+				<table>
+					<tr>
+						<td id="11" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="12" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="13" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+					<tr>
+					<tr>
+						<td id="21" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="22" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="23" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+					<tr>
+					<tr>
+						<td id="31" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="32" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+						<td id="33" onClick="Clic(this);" onMouseOut="Hover(this, false);" onMouseOver="Hover(this, true);" >.</td>
+					<tr>
+				</table>
+			</div>
+			<div class="btns">
+				<button id="vsordinateur">Jouer contre l'ordinateur</button>
+				<button id="deuxjoueurs">Jouer à deux joueurs</button>
+				<button id="remisezero">Remise à zéro</button>
+			</div>
+		</div>
+		<div class="message">
+			<p id="msg">Cliquez un des boutons pour débuter le jeu</p>
+		</div>
+	</div>
+</body>
+</html>
